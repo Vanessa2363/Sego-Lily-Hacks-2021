@@ -1,0 +1,275 @@
+/* Home Page */
+body{
+  margin: 0px;
+}
+.navBar{
+  background-color: #20845A;
+  padding: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+.navLinks{
+  display: flex;
+  justify-content: flex-end;
+  align-items: basline;
+}
+.navLinks a{
+  font-family: rasa;
+  list-style: none;
+  color: white;
+  padding: 0px 15px;
+  letter-spacing: 1px;
+  font: 35px;
+  text-decoration: none;
+}
+.navLinks a:hover{
+  color: #B6F6C1;
+}
+.logoTree {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  align-self: center;
+}
+h1{
+  display: flex;
+  color: #26403B;
+  align-self: center;
+  justify-content: center;
+  font-size: 100px;
+  font-family: 'Times New Roman', serif;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+h4{
+  display: flex;
+  color: #26403B;
+  align-self: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', serif;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+#homePageImages{
+  display: flex;
+  justify-content: space-around;
+}
+.deforestationImg{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: none;
+}
+.factsImg{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: none;
+}
+.uploadImg{
+  width: 300px; 
+  height: 400px; 
+  object-fit: cover;
+  border: none;
+}
+.donateImg{
+  width: 300px; 
+  height: 400px; 
+  object-fit: cover;
+  border: none;
+}
+#pageButtons{
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+.aboutButton{
+  width: 300px;
+  border: none;
+  object-fit: cover;
+  /* padding-left: 90px; */
+}
+.factsButton{
+  width: 300px;
+  border: none;
+  object-fit: cover;
+  /* padding-left: 210px; */
+}
+.uploadButton{
+  width: 300px;
+  border: none;
+  object-fit: cover;
+  /* padding-left: 215px; */
+}
+.donateButton{
+  width: 300px;
+  border: none;
+  object-fit: cover;
+  /* padding-left: 215px; */
+}
+/* About Page */
+.aboutText{
+  margin: 30px 100px ;
+}
+.getTheFactsButton{
+  display: flex;
+  margin: auto;
+  padding: 60px 0px;
+  width: 300px;
+}
+/* Facts Page */
+.factsInfo{
+  margin: 30px 100px;
+}
+/* Flip cards */
+.flipCards{
+  display: flex;
+  justify-content: space-around;
+}
+.co2Flip{
+  background-color: #B6F6C1;
+  width: 300px;
+  height: 400px;
+  border: none;
+  perspective: 1000px;
+}
+.co2FlipInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.co2Flip:hover .co2FlipInner{
+  transform: rotateY(180deg);
+}
+.co2FlipFront, .co2FlipBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.co2FlipBack{
+  transform: rotateY(180deg);
+}
+.tempFlip{
+  background-color: #B6F6C1;
+  width: 300px;
+  height: 400px;
+  border: none;
+  perspective: 1000px;
+}
+.tempFlipInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.tempFlip:hover .tempFlipInner{
+  transform: rotateY(180deg);
+}
+.tempFlipFront, .tempFlipBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.tempFlipBack{
+  transform: rotateY(180deg);
+}
+.meltFlip{
+  background-color: #B6F6C1;
+  width: 300px;
+  height: 400px;
+  border: none;
+  perspective: 1000px;
+}
+.meltFlipInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.meltFlip:hover .meltFlipInner{
+  transform: rotateY(180deg);
+}
+.meltFlipFront, .meltFlipBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.meltFlipBack{
+  transform: rotateY(180deg);
+}
+.riseFlip{
+  background-color: #B6F6C1;
+  width: 300px;
+  height: 400px;
+  border: none;
+  perspective: 1000px;
+}
+.riseFlipInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.riseFlip:hover .riseFlipInner{
+  transform: rotateY(180deg);
+}
+.riseFlipFront, .riseFlipBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.riseFlipBack{
+  transform: rotateY(180deg);
+}
+/* Donate Page */
+.donateText{
+  margin: 30px 100px;
+}
+.donateLinks{
+  text-align: center;
+  line-height: 50px
+}
+.donateLinks a{
+  text-decoration: inherit;
+  margin: 10px;
+}
+.natureLink{
+  padding-right: 15px;
+}
+.UCSLink{
+  padding-left: 15px;
+}
+.showImage{
+  width: 300px;
+  height: 100px;
+  border: 2px solid grey;
+  margin-top: 15px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: grey;
+}
+.showImagePreview{
+  display: none;
+  width: 100px;
+}

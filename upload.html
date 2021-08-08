@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Chlorofilm</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  
+
+  <!-- <style>
+    .showImage{
+      width: 300px;
+      height: 100px;
+      border: 2px solid grey;
+      margin-top: 15px;
+
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: grey;
+    }
+    .showImagePreview{
+      display: none;
+      width: 100px;
+    }
+  </style> -->
+
+</head>
+
+<body>
+  <nav class="navBar">
+    <li class="navLinks">
+      <a href = "../index.html" ><img src = "Images/Logo.png" class = "logoTree" width = "35px" height = "35px" alt = "Logo">
+      <a href = "../index.html" class = "homePage">Home</a>
+      <a href = "about.html" class = "aboutPage">About</a>
+      <a href = "facts.html" class = "factsPage">Facts</a>
+      <a href = "upload.html" class = "uploadPage">Upload</a>
+      <a href = "donate.html" class = "donatePage">Donate</a>
+    </li>
+  </nav>
+  <h1 style = "font-size:70px ">Upload Your Own Photos to Help Educate Others</h1>
+  <input type = "file" name = "uploadFile" id = "uploadFile">
+  <div class = "showImage" id = "show-Image">
+    <img src = "" alt="showImage" class = "showImagePreview"
+    <span class = "showImageText">Show Image</span>
+  </div>
+    <!-- <script>
+    const uploadFile = document.getElementById("uploadFile");
+    const previewContainer = document.getElementById("show-Image");
+    const imageShow = previewContainer.querySelector(".showImagePreview");
+    const imageTextShow = previewContainer.querySelector(".showImageText");
+
+      uploadFile.addEventListener("change", function(){
+      const file = this.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+
+        imageTextShow.style.display = "none";
+        imageShow.style.display = "block";
+
+        reader.addEventListener("load", function(){
+          imageShow.setAttribute("src", this.result);
+        });
+
+        reader.readAsDataURL(file);
+      } else {
+        imageTextShow.style.display = null;
+        imageShow.style.display = null;
+        previewImage.setAttribute("src", " ");
+      }
+    });
+  </script> -->
+	<script src="script.js"></script>
+
+</body>
+</html>
